@@ -8,8 +8,8 @@ build/*
 # Exclude OS X folder attributes
 .DS_Store
   
-# Exclude .idea of AppCode
-.idea/workspace.xml
+# Exclude workspace.xml of AppCode
+workspace.xml
   
 # Exclude user-specific XCode 3 and 4 files
 *.mode1
