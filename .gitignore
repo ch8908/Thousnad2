@@ -9,7 +9,7 @@ build/*
 .DS_Store
   
 # Exclude .idea of AppCode
-.idea/workspace.xml
+/.idea/workspace.xml
   
 # Exclude user-specific XCode 3 and 4 files
 *.mode1
