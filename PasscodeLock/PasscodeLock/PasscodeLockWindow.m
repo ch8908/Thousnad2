@@ -58,7 +58,6 @@
     }] autorelease];
    self.window.rootViewController = passcodeLockViewController;
     self.window.hidden = YES;
-
 }
 
 - (void) show

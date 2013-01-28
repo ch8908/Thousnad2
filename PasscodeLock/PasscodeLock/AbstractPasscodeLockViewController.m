@@ -131,11 +131,11 @@ static CGFloat CANVAS_HEIGHT = 100;
         UIImageView* imageView = self.inputTextFieldImages[i];
         if (i < inputLength)
         {
-            imageView.image = [UIImage imageNamed:@"password_digit_filled.png"];
+            imageView.image = [UIImage imageNamed:@"image/password_digit_filled.png"];
         }
         else
         {
-            imageView.image = [UIImage imageNamed:@"password_digit.png"];
+            imageView.image = [UIImage imageNamed:@"image/password_digit.png"];
         }
     }
 }
