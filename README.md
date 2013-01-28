@@ -8,11 +8,12 @@ This reponsity is for my blog:
 
 If you have any questions about the example, please leave you message at the post.
 
-Feel free to clone the project.
+Feel free to clone projects.
 
 --
 
 Hello 你好  
+
 這個 reponsity 是用來存放我Blog [Thousand Squared](http://ch8908.github.com/ "Optional Title")
  的範例程式
 
