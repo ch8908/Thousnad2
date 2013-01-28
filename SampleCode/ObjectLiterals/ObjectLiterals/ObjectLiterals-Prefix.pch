@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ObjectLiterals' target in the 'ObjectLiterals' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

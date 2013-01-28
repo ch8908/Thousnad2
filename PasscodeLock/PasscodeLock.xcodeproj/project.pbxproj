@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19388AB21688A3BA006AD41F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19388AB11688A3BA006AD41F /* UIKit.framework */; };
+		19388AB41688A3BA006AD41F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19388AB31688A3BA006AD41F /* Foundation.framework */; };
+		19388AB61688A3BA006AD41F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19388AB51688A3BA006AD41F /* CoreGraphics.framework */; };
+		19388ABC1688A3BA006AD41F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19388ABA1688A3BA006AD41F /* InfoPlist.strings */; };
+		19388ABE1688A3BA006AD41F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19388ABD1688A3BA006AD41F /* main.m */; };
+		19388AC21688A3BA006AD41F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19388AC11688A3BA006AD41F /* AppDelegate.m */; };
+		19388AC41688A3BA006AD41F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 19388AC31688A3BA006AD41F /* Default.png */; };
+		19388AC61688A3BA006AD41F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19388AC51688A3BA006AD41F /* Default@2x.png */; };
+		19388AC81688A3BA006AD41F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19388AC71688A3BA006AD41F /* Default-568h@2x.png */; };
+		19F8C69916A523070000A93A /* image in Resources */ = {isa = PBXBuildFile; fileRef = 19F8C69816A523070000A93A /* image */; };
+		23D1A3339625B9D0DDCD69FE /* AbstractPasscodeLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AC136F8DFCFAD5BCBB12 /* AbstractPasscodeLockViewController.m */; };
+		23D1A4594C3F92AFF8C0DB44 /* PasscodeKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1A19505B1B09C750C4117 /* PasscodeKeyboard.m */; };
+		23D1A48E81576E080A3CFB1C /* EnablePasscodeLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AB125F1C0DE35465EB12 /* EnablePasscodeLockViewController.m */; };
+		23D1A7A5EE36BFEB98606DCA /* PasscodeDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AD20591201E74D561F36 /* PasscodeDataController.m */; };
+		23D1A7D01E48B26A6E25E39C /* VerifyPasscodeLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1ACCEF37598CB01B8078D /* VerifyPasscodeLockViewController.m */; };
+		23D1A81C287E8EB5F4308577 /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AAE2B45EB822C0CA2D60 /* SwitchCell.m */; };
+		23D1A83FA28BFB3E4320ED9D /* PasscodeLockWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1A83641DECA37A4100AFE /* PasscodeLockWindow.m */; };
+		23D1AA1F9A00778EDB113FDA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AE0BE700CBB9D6C73BCC /* MainViewController.m */; };
+		23D1AF99D50D72169B485DE4 /* ChangePasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1A667F030E28D40B4745D /* ChangePasscodeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19388AAD1688A3BA006AD41F /* PasscodeLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasscodeLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19388AB11688A3BA006AD41F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19388AB31688A3BA006AD41F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19388AB51688A3BA006AD41F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19388AB91688A3BA006AD41F /* PasscodeLock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PasscodeLock-Info.plist"; sourceTree = "<group>"; };
+		19388ABB1688A3BA006AD41F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19388ABD1688A3BA006AD41F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19388ABF1688A3BA006AD41F /* PasscodeLock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PasscodeLock-Prefix.pch"; sourceTree = "<group>"; };
+		19388AC01688A3BA006AD41F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19388AC11688A3BA006AD41F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19388AC31688A3BA006AD41F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		19388AC51688A3BA006AD41F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		19388AC71688A3BA006AD41F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		19F8C69816A523070000A93A /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
+		23D1A05B7472B58CD03C8A79 /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchCell.h; sourceTree = "<group>"; };
+		23D1A132F888D75A951BBA8C /* AbstractPasscodeLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractPasscodeLockViewController.h; sourceTree = "<group>"; };
+		23D1A18B15EC325F3610766F /* ChangePasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasscodeViewController.h; sourceTree = "<group>"; };
+		23D1A19505B1B09C750C4117 /* PasscodeKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasscodeKeyboard.m; sourceTree = "<group>"; };
+		23D1A2BD661A899266E3F3E5 /* PasscodeKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasscodeKeyboard.h; sourceTree = "<group>"; };
+		23D1A34DBA5CC60D3751AB55 /* VerifyPasscodeLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyPasscodeLockViewController.h; sourceTree = "<group>"; };
+		23D1A4EBC6365415EEA1CC1B /* EnablePasscodeLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnablePasscodeLockViewController.h; sourceTree = "<group>"; };
+		23D1A667F030E28D40B4745D /* ChangePasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasscodeViewController.m; sourceTree = "<group>"; };
+		23D1A83641DECA37A4100AFE /* PasscodeLockWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasscodeLockWindow.m; sourceTree = "<group>"; };
+		23D1A9F6A79A8D2B4019A948 /* PasscodeDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasscodeDataController.h; sourceTree = "<group>"; };
+		23D1AAE2B45EB822C0CA2D60 /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
+		23D1AB125F1C0DE35465EB12 /* EnablePasscodeLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnablePasscodeLockViewController.m; sourceTree = "<group>"; };
+		23D1AC136F8DFCFAD5BCBB12 /* AbstractPasscodeLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractPasscodeLockViewController.m; sourceTree = "<group>"; };
+		23D1ACA0245DCAEC46DC4C1A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		23D1ACAC93DC0CC1C727388F /* PasscodeLockWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasscodeLockWindow.h; sourceTree = "<group>"; };
+		23D1ACCEF37598CB01B8078D /* VerifyPasscodeLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyPasscodeLockViewController.m; sourceTree = "<group>"; };
+		23D1AD20591201E74D561F36 /* PasscodeDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasscodeDataController.m; sourceTree = "<group>"; };
+		23D1AE0BE700CBB9D6C73BCC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19388AAA1688A3BA006AD41F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19388AB21688A3BA006AD41F /* UIKit.framework in Frameworks */,
+				19388AB41688A3BA006AD41F /* Foundation.framework in Frameworks */,
+				19388AB61688A3BA006AD41F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19388AA21688A3BA006AD41F = {
+			isa = PBXGroup;
+			children = (
+				19F8C69816A523070000A93A /* image */,
+				19388AB71688A3BA006AD41F /* PasscodeLock */,
+				19388AB01688A3BA006AD41F /* Frameworks */,
+				19388AAE1688A3BA006AD41F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19388AAE1688A3BA006AD41F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19388AAD1688A3BA006AD41F /* PasscodeLock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19388AB01688A3BA006AD41F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19388AB11688A3BA006AD41F /* UIKit.framework */,
+				19388AB31688A3BA006AD41F /* Foundation.framework */,
+				19388AB51688A3BA006AD41F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19388AB71688A3BA006AD41F /* PasscodeLock */ = {
+			isa = PBXGroup;
+			children = (
+				19388AB81688A3BA006AD41F /* Supporting Files */,
+				19388AC01688A3BA006AD41F /* AppDelegate.h */,
+				19388AC11688A3BA006AD41F /* AppDelegate.m */,
+				23D1AE0BE700CBB9D6C73BCC /* MainViewController.m */,
+				23D1ACA0245DCAEC46DC4C1A /* MainViewController.h */,
+				23D1AAE2B45EB822C0CA2D60 /* SwitchCell.m */,
+				23D1A05B7472B58CD03C8A79 /* SwitchCell.h */,
+				23D1A132F888D75A951BBA8C /* AbstractPasscodeLockViewController.h */,
+				23D1AC136F8DFCFAD5BCBB12 /* AbstractPasscodeLockViewController.m */,
+				23D1A19505B1B09C750C4117 /* PasscodeKeyboard.m */,
+				23D1A2BD661A899266E3F3E5 /* PasscodeKeyboard.h */,
+				23D1AB125F1C0DE35465EB12 /* EnablePasscodeLockViewController.m */,
+				23D1A4EBC6365415EEA1CC1B /* EnablePasscodeLockViewController.h */,
+				23D1A83641DECA37A4100AFE /* PasscodeLockWindow.m */,
+				23D1ACAC93DC0CC1C727388F /* PasscodeLockWindow.h */,
+				23D1AD20591201E74D561F36 /* PasscodeDataController.m */,
+				23D1A9F6A79A8D2B4019A948 /* PasscodeDataController.h */,
+				23D1ACCEF37598CB01B8078D /* VerifyPasscodeLockViewController.m */,
+				23D1A34DBA5CC60D3751AB55 /* VerifyPasscodeLockViewController.h */,
+				23D1A667F030E28D40B4745D /* ChangePasscodeViewController.m */,
+				23D1A18B15EC325F3610766F /* ChangePasscodeViewController.h */,
+			);
+			path = PasscodeLock;
+			sourceTree = "<group>";
+		};
+		19388AB81688A3BA006AD41F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19388AB91688A3BA006AD41F /* PasscodeLock-Info.plist */,
+				19388ABA1688A3BA006AD41F /* InfoPlist.strings */,
+				19388ABD1688A3BA006AD41F /* main.m */,
+				19388ABF1688A3BA006AD41F /* PasscodeLock-Prefix.pch */,
+				19388AC31688A3BA006AD41F /* Default.png */,
+				19388AC51688A3BA006AD41F /* Default@2x.png */,
+				19388AC71688A3BA006AD41F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19388AAC1688A3BA006AD41F /* PasscodeLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19388ACB1688A3BA006AD41F /* Build configuration list for PBXNativeTarget "PasscodeLock" */;
+			buildPhases = (
+				19388AA91688A3BA006AD41F /* Sources */,
+				19388AAA1688A3BA006AD41F /* Frameworks */,
+				19388AAB1688A3BA006AD41F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasscodeLock;
+			productName = PasscodeLock;
+			productReference = 19388AAD1688A3BA006AD41F /* PasscodeLock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19388AA41688A3BA006AD41F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = ThousandSquare;
+			};
+			buildConfigurationList = 19388AA71688A3BA006AD41F /* Build configuration list for PBXProject "PasscodeLock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 19388AA21688A3BA006AD41F;
+			productRefGroup = 19388AAE1688A3BA006AD41F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19388AAC1688A3BA006AD41F /* PasscodeLock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19388AAB1688A3BA006AD41F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19388ABC1688A3BA006AD41F /* InfoPlist.strings in Resources */,
+				19388AC41688A3BA006AD41F /* Default.png in Resources */,
+				19388AC61688A3BA006AD41F /* Default@2x.png in Resources */,
+				19388AC81688A3BA006AD41F /* Default-568h@2x.png in Resources */,
+				19F8C69916A523070000A93A /* image in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19388AA91688A3BA006AD41F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19388ABE1688A3BA006AD41F /* main.m in Sources */,
+				19388AC21688A3BA006AD41F /* AppDelegate.m in Sources */,
+				23D1AA1F9A00778EDB113FDA /* MainViewController.m in Sources */,
+				23D1A81C287E8EB5F4308577 /* SwitchCell.m in Sources */,
+				23D1A3339625B9D0DDCD69FE /* AbstractPasscodeLockViewController.m in Sources */,
+				23D1A4594C3F92AFF8C0DB44 /* PasscodeKeyboard.m in Sources */,
+				23D1A48E81576E080A3CFB1C /* EnablePasscodeLockViewController.m in Sources */,
+				23D1A83FA28BFB3E4320ED9D /* PasscodeLockWindow.m in Sources */,
+				23D1A7A5EE36BFEB98606DCA /* PasscodeDataController.m in Sources */,
+				23D1A7D01E48B26A6E25E39C /* VerifyPasscodeLockViewController.m in Sources */,
+				23D1AF99D50D72169B485DE4 /* ChangePasscodeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19388ABA1688A3BA006AD41F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19388ABB1688A3BA006AD41F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19388AC91688A3BA006AD41F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19388ACA1688A3BA006AD41F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19388ACC1688A3BA006AD41F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasscodeLock/PasscodeLock-Prefix.pch";
+				INFOPLIST_FILE = "PasscodeLock/PasscodeLock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		19388ACD1688A3BA006AD41F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasscodeLock/PasscodeLock-Prefix.pch";
+				INFOPLIST_FILE = "PasscodeLock/PasscodeLock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19388AA71688A3BA006AD41F /* Build configuration list for PBXProject "PasscodeLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19388AC91688A3BA006AD41F /* Debug */,
+				19388ACA1688A3BA006AD41F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19388ACB1688A3BA006AD41F /* Build configuration list for PBXNativeTarget "PasscodeLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19388ACC1688A3BA006AD41F /* Debug */,
+				19388ACD1688A3BA006AD41F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19388AA41688A3BA006AD41F /* Project object */;
+}
