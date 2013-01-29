@@ -41,7 +41,6 @@
     [self.navigationItem setTitle:@"Change Passcode"];
 }
 
-
 - (void) onFilled:(NSString*) result
 {
     if (!self.passcode)

@@ -12,8 +12,8 @@
 
 - (id) initPasscodeLockWindow;
 
+- (void) createWindow;
 - (void)show;
 - (void)hide;
-
 
 @end

@@ -4,6 +4,7 @@
 // To change the template use AppCode | Preferences | File Templates.
 //
 
+//====== Use your own data controller =======
 
 #import <Foundation/Foundation.h>
 
