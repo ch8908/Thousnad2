@@ -73,8 +73,6 @@
 - (void) hide
 {
     self.window = nil;
-    [self createWindow];
 }
-
 
 @end
