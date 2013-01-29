@@ -21,7 +21,7 @@
 		23D1A4594C3F92AFF8C0DB44 /* PasscodeKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1A19505B1B09C750C4117 /* PasscodeKeyboard.m */; };
 		23D1A48E81576E080A3CFB1C /* EnablePasscodeLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AB125F1C0DE35465EB12 /* EnablePasscodeLockViewController.m */; };
 		23D1A7A5EE36BFEB98606DCA /* PasscodeDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AD20591201E74D561F36 /* PasscodeDataController.m */; };
-		23D1A7D01E48B26A6E25E39C /* VerifyPasscodeLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1ACCEF37598CB01B8078D /* VerifyPasscodeLockViewController.m */; };
+		23D1A7D01E48B26A6E25E39C /* VerifyPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1ACCEF37598CB01B8078D /* VerifyPasscodeViewController.m */; };
 		23D1A81C287E8EB5F4308577 /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AAE2B45EB822C0CA2D60 /* SwitchCell.m */; };
 		23D1A83FA28BFB3E4320ED9D /* PasscodeLockWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1A83641DECA37A4100AFE /* PasscodeLockWindow.m */; };
 		23D1AA1F9A00778EDB113FDA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AE0BE700CBB9D6C73BCC /* MainViewController.m */; };
@@ -48,7 +48,7 @@
 		23D1A18B15EC325F3610766F /* ChangePasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasscodeViewController.h; sourceTree = "<group>"; };
 		23D1A19505B1B09C750C4117 /* PasscodeKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasscodeKeyboard.m; sourceTree = "<group>"; };
 		23D1A2BD661A899266E3F3E5 /* PasscodeKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasscodeKeyboard.h; sourceTree = "<group>"; };
-		23D1A34DBA5CC60D3751AB55 /* VerifyPasscodeLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyPasscodeLockViewController.h; sourceTree = "<group>"; };
+		23D1A34DBA5CC60D3751AB55 /* VerifyPasscodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyPasscodeViewController.h; sourceTree = "<group>"; };
 		23D1A4EBC6365415EEA1CC1B /* EnablePasscodeLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnablePasscodeLockViewController.h; sourceTree = "<group>"; };
 		23D1A667F030E28D40B4745D /* ChangePasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasscodeViewController.m; sourceTree = "<group>"; };
 		23D1A83641DECA37A4100AFE /* PasscodeLockWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasscodeLockWindow.m; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		23D1AC136F8DFCFAD5BCBB12 /* AbstractPasscodeLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractPasscodeLockViewController.m; sourceTree = "<group>"; };
 		23D1ACA0245DCAEC46DC4C1A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		23D1ACAC93DC0CC1C727388F /* PasscodeLockWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasscodeLockWindow.h; sourceTree = "<group>"; };
-		23D1ACCEF37598CB01B8078D /* VerifyPasscodeLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyPasscodeLockViewController.m; sourceTree = "<group>"; };
+		23D1ACCEF37598CB01B8078D /* VerifyPasscodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyPasscodeViewController.m; sourceTree = "<group>"; };
 		23D1AD20591201E74D561F36 /* PasscodeDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasscodeDataController.m; sourceTree = "<group>"; };
 		23D1AE0BE700CBB9D6C73BCC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,8 +125,8 @@
 				23D1ACAC93DC0CC1C727388F /* PasscodeLockWindow.h */,
 				23D1AD20591201E74D561F36 /* PasscodeDataController.m */,
 				23D1A9F6A79A8D2B4019A948 /* PasscodeDataController.h */,
-				23D1ACCEF37598CB01B8078D /* VerifyPasscodeLockViewController.m */,
-				23D1A34DBA5CC60D3751AB55 /* VerifyPasscodeLockViewController.h */,
+				23D1ACCEF37598CB01B8078D /* VerifyPasscodeViewController.m */,
+				23D1A34DBA5CC60D3751AB55 /* VerifyPasscodeViewController.h */,
 				23D1A667F030E28D40B4745D /* ChangePasscodeViewController.m */,
 				23D1A18B15EC325F3610766F /* ChangePasscodeViewController.h */,
 			);
@@ -222,7 +222,7 @@
 				23D1A48E81576E080A3CFB1C /* EnablePasscodeLockViewController.m in Sources */,
 				23D1A83FA28BFB3E4320ED9D /* PasscodeLockWindow.m in Sources */,
 				23D1A7A5EE36BFEB98606DCA /* PasscodeDataController.m in Sources */,
-				23D1A7D01E48B26A6E25E39C /* VerifyPasscodeLockViewController.m in Sources */,
+				23D1A7D01E48B26A6E25E39C /* VerifyPasscodeViewController.m in Sources */,
 				23D1AF99D50D72169B485DE4 /* ChangePasscodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

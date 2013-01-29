@@ -5,15 +5,15 @@
 //
 
 
-#import "VerifyPasscodeLockViewController.h"
+#import "VerifyPasscodeViewController.h"
 #import "PasscodeDataController.h"
 
-@interface VerifyPasscodeLockViewController()
+@interface VerifyPasscodeViewController()
 @property (nonatomic, readwrite, retain) PasscodeDataController* userPreference;
 @property (nonatomic, readonly, copy) CompletionBlock complete;
 @end
 
-@implementation VerifyPasscodeLockViewController
+@implementation VerifyPasscodeViewController
 @synthesize userPreference = _userPreference;
 @synthesize complete = _complete;
 

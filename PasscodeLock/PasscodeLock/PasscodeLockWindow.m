@@ -7,7 +7,7 @@
 
 #import "PasscodeLockWindow.h"
 #import "PasscodeDataController.h"
-#import "VerifyPasscodeLockViewController.h"
+#import "VerifyPasscodeViewController.h"
 
 
 @interface PasscodeLockWindow()
@@ -53,7 +53,7 @@
     self.window = [[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds] autorelease];
     self.window.windowLevel = UIWindowLevelAlert + 2;
     __block PasscodeLockWindow* preventCircularRef = self;
-    VerifyPasscodeLockViewController* passcodeLockViewController = [[[VerifyPasscodeLockViewController alloc] initVerify:^{
+    VerifyPasscodeViewController* passcodeLockViewController = [[[VerifyPasscodeViewController alloc] initVerify:^{
         [preventCircularRef hide];
     }] autorelease];
    self.window.rootViewController = passcodeLockViewController;

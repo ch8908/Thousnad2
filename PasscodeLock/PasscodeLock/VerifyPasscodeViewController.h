@@ -11,7 +11,7 @@
 
 typedef void (^CompletionBlock)(void);
 
-@interface VerifyPasscodeLockViewController : AbstractPasscodeLockViewController
+@interface VerifyPasscodeViewController : AbstractPasscodeLockViewController
 - (id) initVerify:(CompletionBlock) complete;
 
 
