@@ -3,7 +3,7 @@ PrettyFormatter
 
 ##Introduction
 
-![screenshot](https://github.com/ch8908/Thousnad2/blob/master/PrettyFormatter/exampleImage.png)
+![screenshot](http://github.com/ch8908/Thousnad2/blob/master/PrettyFormatter/exampleImage.png)
 
 This project shows you how to use **NSCalendar** and **NSDateComponents**, and set the ***date formate*** for **NSDateFormatter**.
 
