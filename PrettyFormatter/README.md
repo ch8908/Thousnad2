@@ -3,9 +3,12 @@ PrettyFormatter
 
 ##Introduction
 
+{% img center https://github.com/ch8908/Thousnad2/blob/master/PrettyFormatter/exampleImage.png %}
+
+
 This project shows you how to use **NSCalendar** and **NSDateComponents**, and set the ***date formate*** for **NSDateFormatter**.
 
-For more information about ***date formate***:  
+For more information about ***date format***:  
 [Unicode Date Format Patterns](http://unicode.org/reports/tr35/tr35-6.html#Date_Format_Patterns "Optional Title")
 
 PrettyFormatter class contains two kinds of format:
