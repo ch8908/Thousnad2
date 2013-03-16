@@ -1,7 +1,7 @@
 Pretty formatter
 =========
 
-##Pretty formatter
+##Introduction
 
 This project shows you how to use **NSCalendar** and **NSDateComponents**, and set the ***date formate*** for **NSDateFormatter**.
 
@@ -10,12 +10,17 @@ more information about ***date formate***:
 
 PrettyFormatter class contains two kinds of format:
 * Twitter time format
-* Facebook format
+* Facebook time format
 
 ##How to use
-Just Import *PrettyFormatter.h*, and use it's class methods.
+Just Import **PrettyFormatter.h**
 
-for example:
+```objc
+#import "PrettyFormatter.h"
+```
+
+
+And use it's class methods. For example:
 ```objc
 label3.text = [PrettyFormatter twitterFormat:[NSDate dateWithTimeIntervalSinceNow:-60 * 60]];
 ```
