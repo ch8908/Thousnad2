@@ -16,8 +16,8 @@
 		1904D64F16F45DB7006B820D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1904D64E16F45DB7006B820D /* Default.png */; };
 		1904D65116F45DB7006B820D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1904D65016F45DB7006B820D /* Default@2x.png */; };
 		1904D65316F45DB7006B820D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1904D65216F45DB7006B820D /* Default-568h@2x.png */; };
+		1904D65C16F482AF006B820D /* PrettyFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1904D65B16F482AF006B820D /* PrettyFormatter.m */; };
 		23D1A149F143C420B9CA7FCD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1A241BBC05FBA836B2DB2 /* ViewController.m */; };
-		23D1A9647EDB79CABBF4991C /* PrettyFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AB3F288D9EE6AD21E37F /* PrettyFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		1904D64E16F45DB7006B820D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1904D65016F45DB7006B820D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1904D65216F45DB7006B820D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		23D1A0A293B49B0F944DAC71 /* PrettyFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyFormatter.h; sourceTree = "<group>"; };
+		1904D65A16F482AF006B820D /* PrettyFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrettyFormatter.h; path = Class/PrettyFormatter.h; sourceTree = "<group>"; };
+		1904D65B16F482AF006B820D /* PrettyFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrettyFormatter.m; path = Class/PrettyFormatter.m; sourceTree = "<group>"; };
 		23D1A1B3B04EF06C568B3FF6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		23D1A241BBC05FBA836B2DB2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		23D1AB3F288D9EE6AD21E37F /* PrettyFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 		1904D65916F45E01006B820D /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				23D1AB3F288D9EE6AD21E37F /* PrettyFormatter.m */,
-				23D1A0A293B49B0F944DAC71 /* PrettyFormatter.h */,
+				1904D65A16F482AF006B820D /* PrettyFormatter.h */,
+				1904D65B16F482AF006B820D /* PrettyFormatter.m */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -184,8 +184,8 @@
 			files = (
 				1904D64916F45DB7006B820D /* main.m in Sources */,
 				1904D64D16F45DB7006B820D /* AppDelegate.m in Sources */,
-				23D1A9647EDB79CABBF4991C /* PrettyFormatter.m in Sources */,
 				23D1A149F143C420B9CA7FCD /* ViewController.m in Sources */,
+				1904D65C16F482AF006B820D /* PrettyFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +300,7 @@
 				1904D65816F45DB7006B820D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
