@@ -32,3 +32,4 @@ It's very easy to use;
 * iOS >= 4.3
 * non-ARC
 
+[View the original post](http://ch8908.github.com/blog/2013/03/16/shi-jian-ge-shi/)

@@ -39,3 +39,5 @@ You can custom your "Passcode Lock" view via customizng **AbstractPasscodeLockVi
 ##Requirements
 * iOS >= 4.3
 * non-ARC
+
+[View the original post](http://ch8908.github.com/blog/2013/01/27/passcodelock/)
