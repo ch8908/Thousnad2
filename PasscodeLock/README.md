@@ -2,6 +2,8 @@ PasscodeLock
 =========
 ##Intrudoction
 
+![screenshot](https://raw.github.com/ch8908/Thousnad2/master/PasscodeLock/demoImage.jpg)
+
 This project shows you how to create a "Passcode Lock" window.
 
 You can custom your "Passcode Lock" view via customizng **AbstractPasscodeLockViewController**
