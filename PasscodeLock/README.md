@@ -12,6 +12,7 @@ You can custom your "Passcode Lock" view via customizng **AbstractPasscodeLockVi
 ####Create "Passcode Lock" related view controllers
 
 1. Create your "Passcode Lock" view controllers by inheriting **AbstractPasscodeLockViewController**. You should have 3 ViewControllers for   
+
 * Enable passcode lock.
 * Change passcode.
 * Verify passcode. 
