@@ -48,7 +48,7 @@ typedef enum
         _passcodeLockSwitchCell = [[SwitchCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                                     reuseIdentifier:@"SwitchCellEnablePassLock"];
 
-        _passcodeLockSwitchCell.textLabel.text = @"Pass Lock";
+        _passcodeLockSwitchCell.textLabel.text = @"Passcode Lock";
         [_passcodeLockSwitchCell.switchView addTarget:self
                                                action:@selector(onSwitch:)
                                      forControlEvents:UIControlEventValueChanged];
