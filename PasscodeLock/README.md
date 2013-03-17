@@ -2,11 +2,11 @@ PasscodeLock
 =========
 ##Intrudoction
 
-This project shows you how to create a ***Passcode Lock***.
+This project shows you how to create a ***Passcode Lock*** window.
 
 You can custom your own ***Passcode Lock*** view via **AbstractPasscodeLockViewController**
 
-P.S. **This project is non-arc**
+>p.s. This project is non-arc.
 
 ##How to use:
 
