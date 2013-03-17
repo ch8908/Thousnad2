@@ -21,7 +21,6 @@ Just Import **PrettyFormatter.h**
 #import "PrettyFormatter.h"
 ```
 
-
 And use it's class methods. For example:
 ```objc
 label3.text = [PrettyFormatter twitterFormat:[NSDate dateWithTimeIntervalSinceNow:-60 * 60]];
@@ -29,5 +28,7 @@ label3.text = [PrettyFormatter twitterFormat:[NSDate dateWithTimeIntervalSinceNo
 
 It's very easy to use;
 
---
+##Requirements
+* iOS >= 4.3
+* non-ARC
 
