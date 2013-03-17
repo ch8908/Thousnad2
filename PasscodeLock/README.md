@@ -11,11 +11,10 @@ You can custom your "Passcode Lock" view via customizng **AbstractPasscodeLockVi
 
 ####Create "Passcode Lock" related view controllers
 
-*   Create your "Passcode Lock" view controllers by inheriting **AbstractPasscodeLockViewController**. You should have 3 view controllers for:
-    * Enable passcode lock.
-    * Change passcode.
-    * Verify passcode.  
-
+* Create your "Passcode Lock" view controllers by inheriting **AbstractPasscodeLockViewController**. You should have 3 view controllers for:
+  1. Enable passcode lock.
+  2. Change passcode.
+  3. Verify passcode.  
 
 
 * Implement <code>- (void) onFilled:(NSString*) result </code> in each ViewControllers. <code>- (void) onFilled:(NSString*) result </code> will be called when user input 4 digits. This is where you can verify the passcode.
