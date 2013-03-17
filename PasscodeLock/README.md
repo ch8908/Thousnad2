@@ -12,15 +12,15 @@ P.S. **This project is non-arc**
 
 ####Create "Passcode Lock" related view controllers
 
-1. Create your PasscodeLock ViewControllers (You may have 3 ViewControllers for 1.enable passcode lock, 2.change passcode and 3.verify passcode) by inheriting **AbstractPasscodeLockViewController**.  
+1. Create your PasscodeLock ViewControllers (You should have 3 ViewControllers for 1. Enable passcode lock, 2. Change passcode and 3. Verify passcode) by inheriting **AbstractPasscodeLockViewController**.  
 
 2. Implement <code>- (void) onFilled:(NSString*) result </code> in each ViewControllers. <code>- (void) onFilled:(NSString*) result </code> will be called when user input 4 digits. This is where you can verify the passcode.
 
-###Show "Passcode Lock" view controller
+###Show "Passcode Lock" window
 
-1. Create a instance of **PasscodeLockWindow** class at ***youAppName***AppDelegate.  
+1. Create a instance of **PasscodeLockWindow** class at ***youAppNameAppDelegate***.  
 ```objc
 @property (nonatomic, readwrite, retain) PasscodeLockWindow* passcodeLockWindow;
 ```
 
-2. use method <code> [show] </code> to show up the "Passcode Lock"
+2. Using the method <code>[self.passcodeLockWindow show]</code> to show up the "Passcode Lock" window.
