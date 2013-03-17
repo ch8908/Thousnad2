@@ -16,6 +16,8 @@ You can custom your "Passcode Lock" view via customizng **AbstractPasscodeLockVi
     * Change passcode.
     * Verify passcode.  
 
+
+
 * Implement <code>- (void) onFilled:(NSString*) result </code> in each ViewControllers. <code>- (void) onFilled:(NSString*) result </code> will be called when user input 4 digits. This is where you can verify the passcode.
 
 ###Show "Passcode Lock" window
