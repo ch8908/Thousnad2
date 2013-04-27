@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19526B5F172BA6FD00F7C6D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19526B5E172BA6FD00F7C6D2 /* UIKit.framework */; };
+		19526B61172BA6FD00F7C6D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19526B60172BA6FD00F7C6D2 /* Foundation.framework */; };
+		19526B63172BA6FD00F7C6D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19526B62172BA6FD00F7C6D2 /* CoreGraphics.framework */; };
+		19526B69172BA6FD00F7C6D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19526B67172BA6FD00F7C6D2 /* InfoPlist.strings */; };
+		19526B6B172BA6FD00F7C6D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19526B6A172BA6FD00F7C6D2 /* main.m */; };
+		19526B6F172BA6FD00F7C6D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19526B6E172BA6FD00F7C6D2 /* AppDelegate.m */; };
+		19526B71172BA6FD00F7C6D2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 19526B70172BA6FD00F7C6D2 /* Default.png */; };
+		19526B73172BA6FD00F7C6D2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19526B72172BA6FD00F7C6D2 /* Default@2x.png */; };
+		19526B75172BA6FD00F7C6D2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19526B74172BA6FD00F7C6D2 /* Default-568h@2x.png */; };
+		19526B78172BA6FD00F7C6D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19526B77172BA6FD00F7C6D2 /* ViewController.m */; };
+		19526B7B172BA6FD00F7C6D2 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19526B79172BA6FD00F7C6D2 /* ViewController_iPhone.xib */; };
+		19526B7E172BA6FD00F7C6D2 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19526B7C172BA6FD00F7C6D2 /* ViewController_iPad.xib */; };
+		23D1A418F2C6C85C737332C3 /* UIButton+EnlargeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AB7D9F0D42AC6C0DA9E3 /* UIButton+EnlargeArea.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19526B5B172BA6FD00F7C6D2 /* EnlargeTouchArea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnlargeTouchArea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19526B5E172BA6FD00F7C6D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19526B60172BA6FD00F7C6D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19526B62172BA6FD00F7C6D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19526B66172BA6FD00F7C6D2 /* EnlargeTouchArea-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EnlargeTouchArea-Info.plist"; sourceTree = "<group>"; };
+		19526B68172BA6FD00F7C6D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19526B6A172BA6FD00F7C6D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19526B6C172BA6FD00F7C6D2 /* EnlargeTouchArea-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EnlargeTouchArea-Prefix.pch"; sourceTree = "<group>"; };
+		19526B6D172BA6FD00F7C6D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19526B6E172BA6FD00F7C6D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19526B70172BA6FD00F7C6D2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		19526B72172BA6FD00F7C6D2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		19526B74172BA6FD00F7C6D2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		19526B76172BA6FD00F7C6D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		19526B77172BA6FD00F7C6D2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		19526B7A172BA6FD00F7C6D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		19526B7D172BA6FD00F7C6D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		23D1AB7D9F0D42AC6C0DA9E3 /* UIButton+EnlargeArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeArea.m"; sourceTree = "<group>"; };
+		23D1AF39234E27A5BC4875AF /* UIButton+EnlargeArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeArea.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19526B58172BA6FD00F7C6D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19526B5F172BA6FD00F7C6D2 /* UIKit.framework in Frameworks */,
+				19526B61172BA6FD00F7C6D2 /* Foundation.framework in Frameworks */,
+				19526B63172BA6FD00F7C6D2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19526B52172BA6FD00F7C6D2 = {
+			isa = PBXGroup;
+			children = (
+				19526B64172BA6FD00F7C6D2 /* EnlargeTouchArea */,
+				19526B5D172BA6FD00F7C6D2 /* Frameworks */,
+				19526B5C172BA6FD00F7C6D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19526B5C172BA6FD00F7C6D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19526B5B172BA6FD00F7C6D2 /* EnlargeTouchArea.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19526B5D172BA6FD00F7C6D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19526B5E172BA6FD00F7C6D2 /* UIKit.framework */,
+				19526B60172BA6FD00F7C6D2 /* Foundation.framework */,
+				19526B62172BA6FD00F7C6D2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19526B64172BA6FD00F7C6D2 /* EnlargeTouchArea */ = {
+			isa = PBXGroup;
+			children = (
+				19526B6D172BA6FD00F7C6D2 /* AppDelegate.h */,
+				19526B6E172BA6FD00F7C6D2 /* AppDelegate.m */,
+				19526B76172BA6FD00F7C6D2 /* ViewController.h */,
+				19526B77172BA6FD00F7C6D2 /* ViewController.m */,
+				19526B79172BA6FD00F7C6D2 /* ViewController_iPhone.xib */,
+				19526B7C172BA6FD00F7C6D2 /* ViewController_iPad.xib */,
+				19526B65172BA6FD00F7C6D2 /* Supporting Files */,
+				23D1AB7D9F0D42AC6C0DA9E3 /* UIButton+EnlargeArea.m */,
+				23D1AF39234E27A5BC4875AF /* UIButton+EnlargeArea.h */,
+			);
+			path = EnlargeTouchArea;
+			sourceTree = "<group>";
+		};
+		19526B65172BA6FD00F7C6D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19526B66172BA6FD00F7C6D2 /* EnlargeTouchArea-Info.plist */,
+				19526B67172BA6FD00F7C6D2 /* InfoPlist.strings */,
+				19526B6A172BA6FD00F7C6D2 /* main.m */,
+				19526B6C172BA6FD00F7C6D2 /* EnlargeTouchArea-Prefix.pch */,
+				19526B70172BA6FD00F7C6D2 /* Default.png */,
+				19526B72172BA6FD00F7C6D2 /* Default@2x.png */,
+				19526B74172BA6FD00F7C6D2 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19526B5A172BA6FD00F7C6D2 /* EnlargeTouchArea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19526B81172BA6FD00F7C6D2 /* Build configuration list for PBXNativeTarget "EnlargeTouchArea" */;
+			buildPhases = (
+				19526B57172BA6FD00F7C6D2 /* Sources */,
+				19526B58172BA6FD00F7C6D2 /* Frameworks */,
+				19526B59172BA6FD00F7C6D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnlargeTouchArea;
+			productName = EnlargeTouchArea;
+			productReference = 19526B5B172BA6FD00F7C6D2 /* EnlargeTouchArea.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19526B53172BA6FD00F7C6D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = ThousandSquare;
+			};
+			buildConfigurationList = 19526B56172BA6FD00F7C6D2 /* Build configuration list for PBXProject "EnlargeTouchArea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 19526B52172BA6FD00F7C6D2;
+			productRefGroup = 19526B5C172BA6FD00F7C6D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19526B5A172BA6FD00F7C6D2 /* EnlargeTouchArea */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19526B59172BA6FD00F7C6D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19526B69172BA6FD00F7C6D2 /* InfoPlist.strings in Resources */,
+				19526B71172BA6FD00F7C6D2 /* Default.png in Resources */,
+				19526B73172BA6FD00F7C6D2 /* Default@2x.png in Resources */,
+				19526B75172BA6FD00F7C6D2 /* Default-568h@2x.png in Resources */,
+				19526B7B172BA6FD00F7C6D2 /* ViewController_iPhone.xib in Resources */,
+				19526B7E172BA6FD00F7C6D2 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19526B57172BA6FD00F7C6D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19526B6B172BA6FD00F7C6D2 /* main.m in Sources */,
+				19526B6F172BA6FD00F7C6D2 /* AppDelegate.m in Sources */,
+				19526B78172BA6FD00F7C6D2 /* ViewController.m in Sources */,
+				23D1A418F2C6C85C737332C3 /* UIButton+EnlargeArea.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19526B67172BA6FD00F7C6D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19526B68172BA6FD00F7C6D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		19526B79172BA6FD00F7C6D2 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19526B7A172BA6FD00F7C6D2 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		19526B7C172BA6FD00F7C6D2 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19526B7D172BA6FD00F7C6D2 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19526B7F172BA6FD00F7C6D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19526B80172BA6FD00F7C6D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19526B82172BA6FD00F7C6D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnlargeTouchArea/EnlargeTouchArea-Prefix.pch";
+				INFOPLIST_FILE = "EnlargeTouchArea/EnlargeTouchArea-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		19526B83172BA6FD00F7C6D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnlargeTouchArea/EnlargeTouchArea-Prefix.pch";
+				INFOPLIST_FILE = "EnlargeTouchArea/EnlargeTouchArea-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19526B56172BA6FD00F7C6D2 /* Build configuration list for PBXProject "EnlargeTouchArea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19526B7F172BA6FD00F7C6D2 /* Debug */,
+				19526B80172BA6FD00F7C6D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19526B81172BA6FD00F7C6D2 /* Build configuration list for PBXNativeTarget "EnlargeTouchArea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19526B82172BA6FD00F7C6D2 /* Debug */,
+				19526B83172BA6FD00F7C6D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19526B53172BA6FD00F7C6D2 /* Project object */;
+}
