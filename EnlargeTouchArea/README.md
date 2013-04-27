@@ -15,7 +15,11 @@ create a button, and use the method:
 ###Customization
 You may want to custom your own touch area. All directions are possible.
 
-In <code>setEnlargeEdgeWithTop:</code> method, set the size of top, right, bottom, left you want.
+In <code>setEnlargeEdgeWithTop:</code> method, set the size of [top, right, bottom, left] you want.
+
+```objc
+[enlargeButton setEnlargeEdgeWithTop:20 right:20 bottom:20 left:0];
+```
 
 You can easily customize your touch area of button.
 
