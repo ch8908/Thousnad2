@@ -4,14 +4,20 @@ EnlargeTouchArea
 
 This project shows you how to enlarge you button touch area.
 
-##How to use:
+##Usage
 Drag **UIButton+EnlargeArea.h** and **UIButton+EnlargeArea.m** into your project.
 
 create a button, and use the method:
 ```objc
-[enlargeButton1 setEnlargeEdgeWithTop:20 right:20 bottom:20 left:0];
+[enlargeButton setEnlargeEdge:20];
 ```
 
+###Customization
+You may want to custom your own touch area. All directions are possible.
+
+In <code>setEnlargeEdgeWithTop:</code> method, set the size of top, right, bottom, left you want.
+
+You can easily customize your touch area of button.
 
 ##Requirements
 * iOS >= 4.3
