@@ -1,3 +1,5 @@
+![screenshot](https://raw2.github.com/ch8908/Thousnad2/master/CustomPageControl/SampleImage.png)
+
 Customize your PageControl just like ViewPagerIndicator
 =========
 ##Intrudoction
