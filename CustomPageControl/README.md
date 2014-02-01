@@ -1,7 +1,8 @@
-![screenshot](https://raw2.github.com/ch8908/Thousnad2/master/CustomPageControl/SampleImage.png)
-
 Customize your PageControl just like ViewPagerIndicator
 =========
+
+![screenshot](https://raw2.github.com/ch8908/Thousnad2/master/CustomPageControl/SampleImage.png)
+
 ##Intrudoction
 
 This project shows you how to use [SMPageControl](https://github.com/Spaceman-Labs/SMPageControl) to customize page control just like ViewPagerIndicator in android.
