@@ -33,7 +33,7 @@ NSUInteger NUMBER_OF_PAGE = 10;
     [super viewDidLayoutSubviews];
 
     UILabel* messageLabel = [[UILabel alloc] init];
-    messageLabel.text = @"Rect page control, swipe for test.";
+    messageLabel.text = @"Rect page control, swipe to test.";
     messageLabel.font = [UIFont boldSystemFontOfSize:18];
     messageLabel.textColor = [UIColor hexARGB:0xFFFF6666];
     [messageLabel sizeToFit];
