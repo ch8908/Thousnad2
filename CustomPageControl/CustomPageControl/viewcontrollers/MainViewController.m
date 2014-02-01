@@ -61,7 +61,7 @@ NSUInteger NUMBER_OF_PAGE = 10;
     [self.pageControl setIndicatorMargin:2];
 
     [Views resize:self.pageControl
-    containerSize:CGSizeMake(self.view.bounds.size.width - 60, VIEWS_PAGE_CONTROL_HEIGHT)];
+    containerSize:CGSizeMake(self.view.bounds.size.width, VIEWS_PAGE_CONTROL_HEIGHT)];
 
     // set dot image
     UIImage* currentPageIndicatorImage = [UIImage imageWithRect:CGRectMake(0, 0, indicatorWith, VIEWS_PAGE_CONTROL_HEIGHT)
