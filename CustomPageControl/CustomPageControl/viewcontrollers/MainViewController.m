@@ -9,7 +9,7 @@
 #import "UIImage+Util.h"
 #import "Views.h"
 
-CGFloat VIEWS_PAGE_CONTROL_HEIGHT = 3;
+CGFloat VIEWS_PAGE_CONTROL_HEIGHT = 5;
 NSUInteger NUMBER_OF_PAGE = 10;
 
 @interface MainViewController()
@@ -32,35 +32,43 @@ NSUInteger NUMBER_OF_PAGE = 10;
 {
     [super viewDidLayoutSubviews];
 
-    // make pageControl
-    UIView* bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, 80)];
-    bgView.backgroundColor = [UIColor lightGrayColor];
+    UILabel* messageLabel = [[UILabel alloc] init];
+    messageLabel.text = @"Rect page control, swipe for test.";
+    messageLabel.font = [UIFont boldSystemFontOfSize:18];
+    messageLabel.textColor = [UIColor hexARGB:0xFFFF6666];
+    [messageLabel sizeToFit];
+
+    [Views alignCenterMiddle:messageLabel containerFrame:self.view.bounds];
+    [self.view addSubview:messageLabel];
+
+    // Add swipe gesture
     UISwipeGestureRecognizer* swipeLeftGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self
                                                                                                      action:@selector(onSwipe:)];
-
     swipeLeftGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
 
     UISwipeGestureRecognizer* swipeRightGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self
                                                                                                       action:@selector(onSwipe:)];
-
     swipeRightGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
 
-    [bgView addGestureRecognizer:swipeLeftGestureRecognizer];
-    [bgView addGestureRecognizer:swipeRightGestureRecognizer];
+    [self.view addGestureRecognizer:swipeLeftGestureRecognizer];
+    [self.view addGestureRecognizer:swipeRightGestureRecognizer];
 
-    CGFloat indicatorWith = self.view.bounds.size.width / NUMBER_OF_PAGE;
+    // calculate pageControl width, dot width
+    CGFloat indicatorWith = 25;
 
     self.pageControl = [[SMPageControl alloc] init];
     [self.pageControl setBackgroundColor:[UIColor clearColor]];
-    [self.pageControl setIndicatorMargin:0];
+    [self.pageControl setIndicatorMargin:2];
 
-    [Views resize:self.pageControl containerSize:CGSizeMake(self.view.bounds.size.width, VIEWS_PAGE_CONTROL_HEIGHT)];
+    [Views resize:self.pageControl
+    containerSize:CGSizeMake(self.view.bounds.size.width - 60, VIEWS_PAGE_CONTROL_HEIGHT)];
 
+    // set dot image
     UIImage* currentPageIndicatorImage = [UIImage imageWithRect:CGRectMake(0, 0, indicatorWith, VIEWS_PAGE_CONTROL_HEIGHT)
                                                           color:[UIColor hexARGB:0xFFFF6666]];
 
     UIImage* pageIndicatorImage = [UIImage imageWithRect:CGRectMake(0, 0, indicatorWith, VIEWS_PAGE_CONTROL_HEIGHT)
-                                                   color:[UIColor hexARGB:0x19FFCFCF]];
+                                                   color:[UIColor hexARGB:0xFF333333]];
 
     [self.pageControl setCurrentPageIndicatorImage:currentPageIndicatorImage];
     [self.pageControl setPageIndicatorImage:pageIndicatorImage];
@@ -68,10 +76,9 @@ NSUInteger NUMBER_OF_PAGE = 10;
     self.pageControl.numberOfPages = NUMBER_OF_PAGE;
     self.pageControl.currentPage = 0;
 
-    [Views alignCenterMiddle:self.pageControl containerFrame:bgView.bounds];
-
-    [bgView addSubview:self.pageControl];
-    [self.view addSubview:bgView];
+    [Views locate:self.pageControl y:self.view.bounds.size.height - VIEWS_PAGE_CONTROL_HEIGHT - 10];
+    [Views alignCenter:self.pageControl containerWidth:self.view.bounds.size.width];
+    [self.view addSubview:self.pageControl];
 }
 
 - (void) onSwipe:(UISwipeGestureRecognizer*) recognizer
