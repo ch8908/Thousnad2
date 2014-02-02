@@ -21,3 +21,6 @@ workspace.xml
 *.pbxuser
 *.xcworkspace
 xcuserdata
+
+# Exclude Pods directory
+Pods/
