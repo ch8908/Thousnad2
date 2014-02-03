@@ -6,6 +6,7 @@
 #import "YoutubeApiFetcher.h"
 #import "GDataServiceGoogleYouTube.h"
 #import "GDataEntryYouTubeVideo.h"
+#import "MyYoutubeModel.h"
 
 NSString* YoutubeApiFetchFailedNotification = @"YoutubeApiFetchFailedNotification";
 NSString* YoutubeApiFetchSuccessNotification = @"YoutubeApiFetchSuccessNotification";
@@ -37,17 +38,27 @@ static NSString* YOUTUBE_API_V2_KEY = @"AI39si5pHjNCtg0zibyhR6rlKKrUHuiTdNlDwG_z
             completionHandler:^(GDataServiceTicket* ticket, GDataFeedBase* feed, NSError* error) {
                 if (ticket.statusCode / 100 != 2)
                 {
-                    NSLog(@">>>>>> failed:%@", error);
                     [[NSNotificationCenter defaultCenter] postNotificationName:YoutubeApiFetchFailedNotification
                                                                         object:nil];
                     return;
                 }
 
-                NSLog(@">>>>>> feed:%@", feed);
+                NSMutableArray* youtubeVideos = [NSMutableArray array];
+
+                // Convert to our model
                 for (GDataEntryYouTubeVideo* entry in [feed entries])
                 {
-                    NSLog(@">>>>> enrty:%@", entry);
+                    MyYoutubeModel* youtubeModel = [[MyYoutubeModel alloc] init];
+                    youtubeModel.title = entry.title.stringValue;
+                    youtubeModel.viewCount = entry.statistics.viewCount;
+                    GDataMediaThumbnail* thumbnail = entry.mediaGroup.mediaThumbnails[0];
+                    youtubeModel.thumbnailUrl = thumbnail.URLString;
+                    [youtubeVideos addObject:youtubeModel];
                 }
+
+                // Post to view controller
+                [[NSNotificationCenter defaultCenter] postNotificationName:YoutubeApiFetchSuccessNotification
+                                                                    object:[youtubeVideos copy]];
             }];
 }
 

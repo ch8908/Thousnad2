@@ -20,6 +20,7 @@
 		19B79ABA189DF8CF0052EAA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B79AA2189DF8CF0052EAA3 /* UIKit.framework */; };
 		19B79AC2189DF8CF0052EAA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19B79AC0189DF8CF0052EAA3 /* InfoPlist.strings */; };
 		19B79AC4189DF8CF0052EAA3 /* GDataExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B79AC3189DF8CF0052EAA3 /* GDataExampleTests.m */; };
+		23D1AA258427481910D3A522 /* MyYoutubeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1AA14FD380B5B0736ADC1 /* MyYoutubeModel.m */; };
 		23D1ACA51010FEFD2C8109B3 /* YoutubeApiFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1A1C675C8610490E9DD38 /* YoutubeApiFetcher.m */; };
 		23D1AD5FE18BF762B84ABADD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D1A92F9CCF9E020C4306AA /* MainViewController.m */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,8 @@
 		23D1A3690085980AAC93F84B /* YoutubeApiFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoutubeApiFetcher.h; sourceTree = "<group>"; };
 		23D1A8024171E70546A9552C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		23D1A92F9CCF9E020C4306AA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		23D1AA14FD380B5B0736ADC1 /* MyYoutubeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyYoutubeModel.m; sourceTree = "<group>"; };
+		23D1AC8E4A1328AA4AF2DD8A /* MyYoutubeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyYoutubeModel.h; sourceTree = "<group>"; };
 		AA32DEC6F6C34AE791C8A9C2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E56FF5831BA5432BB17179C3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,6 +130,8 @@
 				23D1A8024171E70546A9552C /* MainViewController.h */,
 				23D1A1C675C8610490E9DD38 /* YoutubeApiFetcher.m */,
 				23D1A3690085980AAC93F84B /* YoutubeApiFetcher.h */,
+				23D1AA14FD380B5B0736ADC1 /* MyYoutubeModel.m */,
+				23D1AC8E4A1328AA4AF2DD8A /* MyYoutubeModel.h */,
 			);
 			path = GDataExample;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 				19B79AAB189DF8CF0052EAA3 /* main.m in Sources */,
 				23D1AD5FE18BF762B84ABADD /* MainViewController.m in Sources */,
 				23D1ACA51010FEFD2C8109B3 /* YoutubeApiFetcher.m in Sources */,
+				23D1AA258427481910D3A522 /* MyYoutubeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
