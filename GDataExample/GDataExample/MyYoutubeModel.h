@@ -7,6 +7,7 @@
 
 
 @interface MyYoutubeModel : NSObject
+@property NSString* videoId;
 @property NSString* title;
 @property NSNumber* viewCount;
 @property NSString* thumbnailUrl;

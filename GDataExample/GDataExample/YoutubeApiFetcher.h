@@ -13,4 +13,6 @@ extern NSString* YoutubeApiFetchSuccessNotification;
 - (id) initYoutubeApiFetcher;
 
 - (void) fetchMostPopular;
+
+- (void) batchRequestWithVideos:(NSMutableArray*) array;
 @end

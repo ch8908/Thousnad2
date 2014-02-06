@@ -12,6 +12,7 @@
 @interface MainViewController()<UITableViewDataSource, UITableViewDelegate>
 @property UITableView* tableView;
 @property NSMutableArray* youtubeVideos;
+@property YoutubeApiFetcher* youtubeApiFetcher;
 @end
 
 @implementation MainViewController
@@ -25,6 +26,8 @@
                                                   style:UITableViewStylePlain];
         self.tableView.dataSource = self;
         self.tableView.delegate = self;
+
+        _youtubeApiFetcher = [[YoutubeApiFetcher alloc] initYoutubeApiFetcher];
 
         _youtubeVideos = [NSMutableArray array];
 
@@ -42,8 +45,7 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-    YoutubeApiFetcher* fetcher = [[YoutubeApiFetcher alloc] initYoutubeApiFetcher];
-    [fetcher fetchMostPopular];
+    [self.youtubeApiFetcher fetchMostPopular];
 }
 
 - (void) viewDidLayoutSubviews
@@ -63,6 +65,8 @@
 {
     self.youtubeVideos = notification.object;
     [self.tableView reloadData];
+
+    [self.youtubeApiFetcher batchRequestWithVideos:self.youtubeVideos];
 }
 
 - (NSInteger) tableView:(UITableView*) tableView numberOfRowsInSection:(NSInteger) section
