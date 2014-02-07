@@ -8,7 +8,6 @@
 #import "GDataEntryYouTubeVideo.h"
 #import "MyYoutubeModel.h"
 #import "GDataFeedYouTubeVideo.h"
-#import "GDataQueryYouTube.h"
 
 NSString* YoutubeApiFetchFailedNotification = @"YoutubeApiFetchFailedNotification";
 NSString* YoutubeApiFetchSuccessNotification = @"YoutubeApiFetchSuccessNotification";
@@ -54,9 +53,6 @@ static NSString* YOUTUBE_API_V2_KEY = @"AI39si5pHjNCtg0zibyhR6rlKKrUHuiTdNlDwG_z
                 {
                     MyYoutubeModel* youtubeModel = [[MyYoutubeModel alloc] init];
                     youtubeModel.videoId = entry.mediaGroup.videoID;
-                    NSLog(@">>>>> youtubeModel.identifier:%@", youtubeModel.videoId);
-
-
                     youtubeModel.title = entry.title.stringValue;
                     youtubeModel.viewCount = entry.statistics.viewCount;
                     GDataMediaThumbnail* thumbnail = entry.mediaGroup.mediaThumbnails[0];
@@ -76,7 +72,8 @@ static NSString* YOUTUBE_API_V2_KEY = @"AI39si5pHjNCtg0zibyhR6rlKKrUHuiTdNlDwG_z
     GDataServiceGoogleYouTube* service = [[GDataServiceGoogleYouTube alloc] init];
     [service setYouTubeDeveloperKey:YOUTUBE_API_V2_KEY];
 
-    // Get "most popular" feed url
+    // Retrieving Data for a Single Video
+    // you can check https://developers.google.com/youtube/2.0/developers_guide_protocol_video_entries
     NSURL* feedURL = [GDataServiceGoogleYouTube youTubeURLForFeedID:kGDataYouTubeFeedIDFull];
 
     [service fetchFeedWithURL:feedURL
@@ -89,14 +86,33 @@ static NSString* YOUTUBE_API_V2_KEY = @"AI39si5pHjNCtg0zibyhR6rlKKrUHuiTdNlDwG_z
                     return;
                 }
 
+                // Get Batch URL
                 NSURL* batchURL = [[feed batchLink] URL];
 
                 GDataFeedYouTubeVideo* feedYouTubeVideo = [GDataFeedYouTubeVideo videoFeed];
 
+                // Create batch request entries
+                // it just like this:
+                /*
+                <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"
+                xmlns:batch="http://schemas.google.com/gdata/batch" xmlns:yt="http://gdata.youtube.com/schemas/2007">
+                <batch:operation type="query" />
+                <entry>
+                <id>http://gdata.youtube.com/feeds/api/videos/hLQl3WQQoQ0</id>
+                </entry>
+                <entry>
+                <id>http://gdata.youtube.com/feeds/api/videos/SkTt9k4Y-a8</id>
+                </entry>
+                <entry>
+                <id>http://gdata.youtube.com/feeds/api/videos/pRpeEdMmmQ0</id>
+                </entry>
+                <entry>
+                <id>http://gdata.youtube.com/feeds/api/videos/2FM4UPrAjnc</id>
+                </entry>
+                </feed>
+                * */
                 for (MyYoutubeModel* video in videos)
                 {
-                    GDataYouTubeVideoID* videoID = [[GDataYouTubeVideoID alloc] init];
-
                     GDataEntryYouTubeVideo* youTubeVideoEntry = [GDataEntryYouTubeVideo videoEntry];
                     youTubeVideoEntry.identifier = [NSString stringWithFormat:@"%@%@",
                                                                               @"http://gdata.youtube.com/feeds/api/videos/",
@@ -109,6 +125,7 @@ static NSString* YOUTUBE_API_V2_KEY = @"AI39si5pHjNCtg0zibyhR6rlKKrUHuiTdNlDwG_z
                 op = [GDataBatchOperation batchOperationWithType:kGDataBatchOperationQuery];
                 [feedYouTubeVideo setBatchOperation:op];
 
+                // Now we can send a batch request for all videos with only "one" request.
                 [self fetchBatchWithService:service feed:feedYouTubeVideo
                                    batchURL:batchURL];
 
@@ -129,9 +146,9 @@ static NSString* YOUTUBE_API_V2_KEY = @"AI39si5pHjNCtg0zibyhR6rlKKrUHuiTdNlDwG_z
                       NSMutableArray* youtubeEntries = [[NSMutableArray alloc] init];
                       for (GDataEntryYouTubeVideo* entry in [feed entries])
                       {
-                          NSLog(@">>>>> batch entry:%@", entry);
+                          // here's all your video entry
+                          NSLog(@">>>> entry:%@", entry);
                       }
-
                   }];
 }
 
