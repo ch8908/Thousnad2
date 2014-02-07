@@ -2,7 +2,7 @@ GData Objective-C Client Example
 =========
 ##Introduction
 
-![screenshot](https://raw2.github.com/ch8908/Thousnad2/master/GDataExample/ScreenShot.png)
+<img class="left" height=568 width=320 src="https://raw2.github.com/ch8908/Thousnad2/master/GDataExample/ScreenShot.png">
 
 This project shows you how to use Google [GData Objective-C Client](https://code.google.com/p/gdata-objectivec-client/) fetching youtube videos and use **batch processing**.
 
