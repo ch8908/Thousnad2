@@ -11,13 +11,20 @@ This project shows you how to use Google [GData Objective-C Client](https://code
 
 **Important**
 
-You must be enter your own "YouTube Api Key" in the following field. Ensure you can run this project successfully.
+###Two steps for build project
+
+1. You must be enter your own "YouTube Api Key" in the following field. Ensure you can run this project successfully.
 
 (You can generate your key [here](https://developers.google.com/youtube/registering_an_application))
 
 In "YoutubeApiFetcher.m", modify:
 ```objc
 static NSString* YOUTUBE_API_V2_KEY = @"** Your YouTube API Key **";
+```
+
+2. Install dependency by using cocoapods. Change directory to project directory, and input:
+```
+pod install
 ```
 
 That's it!
