@@ -12,7 +12,7 @@
 NSString* YoutubeApiFetchFailedNotification = @"YoutubeApiFetchFailedNotification";
 NSString* YoutubeApiFetchSuccessNotification = @"YoutubeApiFetchSuccessNotification";
 
-static NSString* YOUTUBE_API_V2_KEY = @"AI39si5pHjNCtg0zibyhR6rlKKrUHuiTdNlDwG_zAK1zwqnZujOxLDtEN_JR9KEu4KTP_aOmfHkBp2zvSY1aaL6KKcqf8vl6LQ";
+static NSString* YOUTUBE_API_V2_KEY = @"** Your YouTube API Key **";
 
 @implementation YoutubeApiFetcher
 
