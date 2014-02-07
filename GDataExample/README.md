@@ -25,7 +25,7 @@ This project shows you how to use Google [GData Objective-C Client](https://code
 pod install
 ```
 
-That's it!
+That's all! Now you can run the project.
 
 ##Requirements
 * iOS >= 6.0
